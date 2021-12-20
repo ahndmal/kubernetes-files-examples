@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sb-simple
+  labels:
+    app: sb-simple
+    type: backend
+    side: backend
+spec:
+  selector:
+    matchLabels:
+      app: sb-simple
+  template:
+    metadata:
+      labels:
+        app: sb-simple
+    spec:
+      containers:
+      - name: sb-simple-3
+        image: andriim88/sb-simple:0.0.3
+        ports:
+        - containerPort: 8080
+        # Set the APP_NAME environment variable
