@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sb-docker-service
+  labels:
+    service: spring-docker-service
+spec:
+  type: ClusterIP   # NodePort
+  selector:
+    app: sb-docker-test
+  ports:
+  - protocol: TCP
+    port: 8081
+    targetPort: 8080
+    #nodePort: 32000
