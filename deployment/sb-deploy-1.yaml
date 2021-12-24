@@ -20,4 +20,6 @@ spec:
         image: andriim88/sb-simple:0.0.3
         ports:
         - containerPort: 8080
-        # Set the APP_NAME environment variable
+        env:
+        - name: DB_URL
+          value: "Some DB"
