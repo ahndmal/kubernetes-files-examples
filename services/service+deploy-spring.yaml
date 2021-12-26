@@ -35,8 +35,8 @@ spec:
         - containerPort: 8080
         env:
         - name: APP_PORT
-          value: 8080
+          value: "8080"
         - name: DB_NAME
-          value: postgres
+          value: "postgres"
         - name: DB_URL
-          value: some_url
+          value: "some_url"
