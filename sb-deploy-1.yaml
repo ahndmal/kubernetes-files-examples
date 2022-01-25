@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: sb-simple-3
-        image: andriim88/sb-simple:0.0.3
+        image: andriim88/sb-simple:0.0.4
         ports:
-        - containerPort: 8080
+        - containerPort: 8081
         # Set the APP_NAME environment variable
