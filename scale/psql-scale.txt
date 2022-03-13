@@ -1,0 +1,2 @@
+kubectl scale --replicas=1 deployment/postgres
+kubectl scale --replicas=2 deployment/account-service
