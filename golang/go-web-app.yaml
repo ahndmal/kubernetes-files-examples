@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: go-web1
-          image: go-web1:0.0.2
+          image: andriim88/go-web1:0.0.2
           resources:
             limits:
               memory: "256Mi"

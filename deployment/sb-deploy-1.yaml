@@ -16,10 +16,10 @@ spec:
         app: sb-simple
     spec:
       containers:
-      - name: sb-simple-3
-        image: andriim88/sb-simple:0.0.3
-        ports:
-        - containerPort: 8080
-        env:
-        - name: DB_URL
-          value: "Some DB"
+        - name: sb-simple-3
+          image: andriim88/sb-simple:0.0.3
+          ports:
+            - containerPort: 8080
+          env:
+            - name: DB_URL
+              value: "Some DB"
